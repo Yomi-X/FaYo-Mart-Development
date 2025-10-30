@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FaYo! Mart – Online Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo">🛍️ FaYo! Mart</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="cart.html">Cart 🛒</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Welcome to FaYo! Mart</h2>
+    <p>Your favorite plug for quality and affordable products.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search products..." oninput="searchProducts()" />
+  </div>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products" id="productSection">
+    <!-- Add product cards here like before -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Earbuds" />
+      <h2>Wireless Earbuds</h2>
+      <p>₦7,000</p>
+      <button onclick="addToCart('Wireless Earbuds', 7000)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Watch" />
+      <h2>Smart Watch</h2>
+      <p>₦15,000</p>
+      <button onclick="addToCart('Smart Watch', 15000)">Add to Cart</button>
+    </div>
+    <!-- Add more as needed -->
+  </section>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup">Product added to cart ✅</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 FaYo! Mart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
